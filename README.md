@@ -1,5 +1,5 @@
-# uptain React Coding Challenge
+# Saloodo React Coding Challenge
 
-install packages: $ npm install
+install packages: \$ npm install
 
-start App: $ npm run dev
+start App: \$ npm run dev
