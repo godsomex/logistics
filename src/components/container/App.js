@@ -6,6 +6,7 @@ import M from "materialize-css";
 import store from "../../store";
 
 import NavBar from "../Presentation/NavBar";
+import Register from "../Presentation/Register";
 import Shipments from "./Shipments";
 import Addbtn from "./Addbtn";
 import AddShipModal from "./addShipModal";
@@ -18,6 +19,7 @@ function App() {
         <Shipments />
         <Addbtn />
         <AddShipModal />
+        <Register />
       </>
     </Provider>
   );

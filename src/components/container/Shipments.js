@@ -3,25 +3,13 @@ import { connect } from "react-redux";
 import ShipmenItem from "./ShipmenItem";
 import { getShipments } from "../../actions/shipmentActions";
 
-function Shipments({ shipment: { loading, shipments }, getShipments }) {
-  // const [Shipments, setShipments] = useState([]);
-  // const [Loading, setLoading] = useState(false);
-
+function Shipments({ shipment: { loading, shipments, error }, getShipments }) {
   useEffect(() => {
     getShipments();
 
     //get Materialize js initialized
     M.AutoInit();
   }, []);
-
-  //load shipments
-  // const getData = async () => {
-  //   setLoading(true);
-  //   const result = await fetch("http://localhost:3010/shipments");
-  //   const data = await result.json();
-  //   setShipments(data);
-  //   setLoading(false);
-  // };
 
   if (loading) {
     return (

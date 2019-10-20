@@ -42,8 +42,35 @@
     }
   ],
   "users": [
-    { "id": 1, "name": "goc", "role": "manager", "password": "password" },
-    { "id": 2, "name": "goc", "role": "biker", "password": "password" },
-    { "id": 3, "name": "goc", "role": "biker", "password": "password" }
+    {
+      "id": 1,
+      "name": "goc",
+      "role": "manager",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "name": "goc",
+      "role": "biker",
+      "password": "password"
+    },
+    {
+      "id": 3,
+      "name": "goc",
+      "role": "biker",
+      "password": "password"
+    },
+    {
+      "name": "",
+      "email": "godspower.omenihu@gmail.com",
+      "password": "445",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "godspower.omenihu@gmail.com",
+      "password": "445",
+      "id": 5
+    }
   ]
 }
