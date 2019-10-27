@@ -1,28 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { Provider } from "react-redux";
-import "materialize-css/dist/css/materialize.min.css";
-import M from "materialize-css";
+import React, { useEffect, useState } from 'react';
+import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.css';
 
-import store from "../../store";
-
-import NavBar from "../Presentation/NavBar";
-import Register from "../Presentation/Register";
-import Shipments from "./Shipments";
-import Addbtn from "./Addbtn";
-import AddShipModal from "./addShipModal";
+import store from '../../store';
+import { loadUser, getBikers } from '../../actions/authActions';
+import NavBar from '../Presentation/NavBar';
+import Shipments from './Shipments';
 
 function App() {
-  return (
-    <Provider store={store}>
-      <>
-        <NavBar />
-        <Shipments />
-        <Addbtn />
-        <AddShipModal />
-        <Register />
-      </>
-    </Provider>
-  );
+    useEffect(() => {
+        store.dispatch(loadUser());
+        store.dispatch(getBikers());
+    }, []);
+    return (
+        <Provider store={store}>
+            <NavBar />
+            <Shipments />
+        </Provider>
+    );
 }
 
 export default App;

@@ -1,4 +1,4 @@
-# Saloodo React Coding Challenge
+# Logistics Management System
 
 install packages: \$ npm install
 
