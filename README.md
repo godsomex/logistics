@@ -1,5 +1,5 @@
-# uptain React Coding Challenge
+# Logistics Management System
 
-install packages: $ npm install
+install packages: \$ npm install
 
-start App: $ npm run dev
+start App: \$ npm run dev

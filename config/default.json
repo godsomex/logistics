@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://godspower:Admin!00@saloodo-9bosm.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "sal_Secret"
+}
