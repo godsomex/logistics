@@ -56,7 +56,6 @@ router.patch('/:shipmentId', (req, res, next) => {
     )
         .exec()
         .then(result => {
-            console.log('updtaeddd', result);
             res.status(200).json({
                 message: 'item updated',
                 result,
