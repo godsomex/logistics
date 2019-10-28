@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import styled from '@emotion/styled';
 import { connect } from 'react-redux';
+import moment from 'moment';
+import 'moment-timezone';
 import { getBikers } from '../../actions/authActions';
 import { assignShipment } from '../../actions/shipmentActions';
 import {
@@ -11,9 +15,6 @@ import {
     FormGroup,
     Input,
 } from 'reactstrap';
-import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
-import DayJS from 'react-dayjs';
 
 function ShipmenItem(
     {
@@ -95,10 +96,10 @@ function ShipmenItem(
                         {order_status}
                     </div>
                     <div className="cols cols-2" data-label="Pickup Date">
-                        {pickup_date}
+                        {moment(pickup_date).format('LLL')}
                     </div>
                     <div className="cols cols-2" data-label="Delivery Date">
-                        {delivered_date}
+                        {moment(delivered_date).format('LLL')}
                     </div>
                     <div className="cols cols-2" data-label="origin">
                         {origin}
