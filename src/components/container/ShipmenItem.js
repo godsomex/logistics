@@ -118,12 +118,14 @@ function ShipmenItem(
                     <ModalBody>
                         <FormGroup>
                             <Input
+                                className="form-control mb-4"
                                 type="datetime-local"
                                 value={pickupDate}
                                 name="pickupDate"
                                 onChange={e => updateFormData(e)}
                             />
                             <Input
+                                className="form-control mb-4"
                                 type="datetime-local"
                                 value={deliveryDate}
                                 name="deliveryDate"
@@ -133,6 +135,7 @@ function ShipmenItem(
                             {isEditing && user.role === 'manager' ? (
                                 <>
                                     <select
+                                        className="form-control mb-4"
                                         name="assign"
                                         onChange={e => updateFormData(e)}
                                     >
@@ -154,11 +157,12 @@ function ShipmenItem(
                                     </select>
 
                                     <select
+                                        className="form-control"
                                         name="orderStatus"
                                         onChange={e => updateFormData(e)}
                                     >
                                         <option defaultValue="choose">
-                                            Select
+                                            Select Order Status
                                         </option>
                                         <option value="waiting">Waiting</option>
                                         <option value="assigned">
