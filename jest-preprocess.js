@@ -1,8 +1,8 @@
-module.exports = {
-  setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"]
-};
+// module.exports = {
+//   setupFilesAfterEnv: ["<rootDir>/setupTests.js"]
+// };
 const babelOptions = {
-  presets: ["babel-preset-react-app"]
+    presets: ['babel-preset-react-app'],
 };
 
-module.exports = require("babel-jest").createTransformer(babelOptions);
+module.exports = require('babel-jest').createTransformer(babelOptions);
